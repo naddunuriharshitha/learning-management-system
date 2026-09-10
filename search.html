@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Search Leaders | Great Minds</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                Great<span>Minds</span>
+            </a>
+
+            <nav class="nav-menu">
+
+                <a href="index.html">Home</a>
+
+                <a href="leaders.html">Leaders</a>
+
+                <a href="categories.html">Categories</a>
+
+                <a href="timeline.html">Timeline</a>
+
+                <a href="world-leaders.html">World Leaders</a>
+
+                <a href="favorites.html">Favorites</a>
+
+                <a href="about.html">About</a>
+
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero">
+
+        <div class="container">
+
+            <span class="page-badge">
+                Discover Great Minds
+            </span>
+
+            <h1>Search Leaders</h1>
+
+            <p>
+                Search for inspiring leaders, scientists, reformers,
+                writers, athletes and other great personalities.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+        <section class="search-page-section">
+
+            <div class="container">
+
+
+                <!-- ================= SEARCH BOX ================= -->
+                <div class="search-box">
+
+                    <div class="search-box-header">
+
+                        <span class="section-label">
+                            Find Someone
+                        </span>
+
+                        <h2>
+                            Who Are You Looking For?
+                        </h2>
+
+                        <p>
+                            Enter a leader's name, profession or category.
+                        </p>
+
+                    </div>
+
+
+                    <form
+                        id="searchForm"
+                        class="search-form"
+                    >
+
+                        <div class="search-input-wrapper">
+
+                            <span class="search-icon">
+                                🔍
+                            </span>
+
+                            <input
+                                type="text"
+                                id="searchInput"
+                                name="search"
+                                placeholder="Search leaders..."
+                                autocomplete="off"
+                            >
+
+                            <button
+                                type="submit"
+                                class="primary-btn"
+                            >
+                                Search
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+                <!-- ================= POPULAR SEARCHES ================= -->
+                <div class="popular-searches">
+
+                    <h3>
+                        Popular Searches
+                    </h3>
+
+                    <div class="search-tags">
+
+                        <button
+                            type="button"
+                            class="search-tag"
+                            data-search="Mahatma Gandhi"
+                        >
+                            Mahatma Gandhi
+                        </button>
+
+                        <button
+                            type="button"
+                            class="search-tag"
+                            data-search="B. R. Ambedkar"
+                        >
+                            B. R. Ambedkar
+                        </button>
+
+                        <button
+                            type="button"
+                            class="search-tag"
+                            data-search="A. P. J. Abdul Kalam"
+                        >
+                            A. P. J. Abdul Kalam
+                        </button>
+
+                        <button
+                            type="button"
+                            class="search-tag"
+                            data-search="Subhash Chandra Bose"
+                        >
+                            Subhash Chandra Bose
+                        </button>
+
+                        <button
+                            type="button"
+                            class="search-tag"
+                            data-search="Scientists"
+                        >
+                            Scientists
+                        </button>
+
+                        <button
+                            type="button"
+                            class="search-tag"
+                            data-search="Sports"
+                        >
+                            Sports
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= CATEGORY FILTER ================= -->
+                <div class="search-filters">
+
+                    <h3>
+                        Search by Category
+                    </h3>
+
+                    <div class="category-filter">
+
+                        <button
+                            type="button"
+                            class="filter-btn active"
+                            data-category="all"
+                        >
+                            All
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-btn"
+                            data-category="indian-leaders"
+                        >
+                            Indian Leaders
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-btn"
+                            data-category="scientists"
+                        >
+                            Scientists
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-btn"
+                            data-category="social-reformers"
+                        >
+                            Social Reformers
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-btn"
+                            data-category="technology"
+                        >
+                            Technology
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-btn"
+                            data-category="sports"
+                        >
+                            Sports
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-btn"
+                            data-category="writers"
+                        >
+                            Writers
+                        </button>
+
+                        <button
+                            type="button"
+                            class="filter-btn"
+                            data-category="business"
+                        >
+                            Business
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= RESULTS HEADER ================= -->
+                <div class="search-results-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            Search Results
+                        </span>
+
+                        <h2 id="resultsTitle">
+                            All Leaders
+                        </h2>
+
+                    </div>
+
+                    <span
+                        id="resultCount"
+                        class="result-count"
+                    >
+                        12 Leaders
+                    </span>
+
+                </div>
+
+
+                <!-- ================= RESULTS GRID ================= -->
+                <div
+                    class="leaders-grid"
+                    id="searchResults"
+                >
+
+
+                    <!-- MAHATMA GANDHI -->
+                    <article
+                        class="leader-card search-result-card"
+                        data-category="indian-leaders"
+                        data-name="Mahatma Gandhi"
+                    >
+
+                        <div class="leader-card-image">
+
+                            <img
+                                src="images/gandhi.jpg"
+                                alt="Mahatma Gandhi"
+                            >
+
+                        </div>
+
+                        <div class="leader-card-content">
+
+                            <span class="leader-category">
+                                Indian Leader
+                            </span>
+
+                            <h3>
+                                Mahatma Gandhi
+                            </h3>
+
+                            <p>
+                                Freedom fighter and leader known for
+                                truth, non-violence and peaceful resistance.
+                            </p>
+
+                            <a
+                                href="leader-details.html"
+                                class="card-link"
+                            >
+                                Read More →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- DR B R AMBEDKAR -->
+                    <article
+                        class="leader-card search-result-card"
+                        data-category="social-reformers"
+                        data-name="Dr. B. R. Ambedkar"
+                    >
+
+                        <div class="leader-card-image">
+
+                            <img
+                                src="images/ambedkar.jpg"
+                                alt="Dr. B. R. Ambedkar"
+                            >
+
+                        </div>
+
+                        <div class="leader-card-content">
+
+                            <span class="leader-category">
+                                Social Reformer
+                            </span>
+
+                            <h3>
+                                Dr. B. R. Ambedkar
+                            </h3>
+
+                            <p>
+                                Jurist, economist and social reformer
+                                who worked for equality and justice.
+                            </p>
+
+                            <a
+                                href="leader-details.html"
+                                class="card-link"
+                            >
+                                Read More →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- APJ ABDUL KALAM -->
+                    <article
+                        class="leader-card search-result-card"
+                        data-category="scientists"
+                        data-name="Dr. A. P. J. Abdul Kalam"
+                    >
+
+                        <div class="leader-card-image">
+
+                            <img
+                                src="images/apj-abdul-kalam.jpg"
+                                alt="Dr. A. P. J. Abdul Kalam"
+                            >
+
+                        </div>
+
+                        <div class="leader-card-content">
+
+                            <span class="leader-category">
+                                Scientist
+                            </span>
+
+                            <h3>
+                                Dr. A. P. J. Abdul Kalam
+                            </h3>
+
+                            <p>
+                                Scientist, teacher and former President
+                                of India who inspired millions.
+                            </p>
+
+                            <a
+                                href="leader-details.html"
+                                class="card-link"
+                            >
+                                Read More →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SUBHASH CHANDRA BOSE -->
+                    <article
+                        class="leader-card search-result-card"
+                        data-category="indian-leaders"
+                        data-name="Subhash Chandra Bose"
+                    >
+
+                        <div class="leader-card-image">
+
+                            <img
+                                src="images/subhash-chandra-bose.jpg"
+                                alt="Subhash Chandra Bose"
+                            >
+
+                        </div>
+
+                        <div class="leader-card-content">
+
+                            <span class="leader-category">
+                                Indian Leader
+                            </span>
+
+                            <h3>
+                                Subhash Chandra Bose
+                            </h3>
+
+                            <p>
+                                Freedom fighter remembered for his
+                                determination and leadership.
+                            </p>
+
+                            <a
+                                href="leader-details.html"
+                                class="card-link"
+                            >
+                                Read More →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SWAMI VIVEKANANDA -->
+                    <article
+                        class="leader-card search-result-card"
+                        data-category="social-reformers"
+                        data-name="Swami Vivekananda"
+                    >
+
+                        <div class="leader-card-image leader-placeholder">
+                            <span>SV</span>
+                        </div>
+
+                        <div class="leader-card-content">
+
+                            <span class="leader-category">
+                                Social Reformer
+                            </span>
+
+                            <h3>
+                                Swami Vivekananda
+                            </h3>
+
+                            <p>
+                                Philosopher and spiritual leader who
+                                inspired people through his teachings.
+                            </p>
+
+                            <a
+                                href="leader-details.html"
+                                class="card-link"
+                            >
+                                Read More →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- C V RAMAN -->
+                    <article
+                        class="leader-card search-result-card"
+                        data-category="scientists"
+                        data-name="C. V. Raman"
+                    >
+
+                        <div class="leader-card-image leader-placeholder">
+                            <span>CV</span>
+                        </div>
+
+                        <div class="leader-card-content">
+
+                            <span class="leader-category">
+                                Scientist
+                            </span>
+
+                            <h3>
+                                C. V. Raman
+                            </h3>
+
+                            <p>
+                                Indian physicist known for important
+                                contributions to the study of light.
+                            </p>
+
+                            <a
+                                href="leader-details.html"
+                                class="card-link"
+                            >
+                                Read More →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- RABINDRANATH TAGORE -->
+                    <article
+                        class="leader-card search-result-card"
+                        data-category="writers"
+                        data-name="Rabindranath Tagore"
+                    >
+
+                        <div class="leader-card-image leader-placeholder">
+                            <span>RT</span>
+                        </div>
+
+                        <div class="leader-card-content">
+
+                            <span class="leader-category">
+                                Writer
+                            </span>
+
+                            <h3>
+                                Rabindranath Tagore
+                            </h3>
+
+                            <p>
+                                Poet, writer and philosopher who made
+                                significant contributions to literature.
+                            </p>
+
+                            <a
+                                href="leader-details.html"
+                                class="card-link"
+                            >
+                                Read More →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- VISWANATHAN ANAND -->
+                    <article
+                        class="leader-card search-result-card"
+                        data-category="sports"
+                        data-name="Viswanathan Anand"
+                    >
+
+                        <div class="leader-card-image leader-placeholder">
+                            <span>VA</span>
+                        </div>
+
+                        <div class="leader-card-content">
+
+                            <span class="leader-category">
+                                Sports
+                            </span>
+
+                            <h3>
+                                Viswanathan Anand
+                            </h3>
+
+                            <p>
+                                Indian chess grandmaster and respected
+                                international sports personality.
+                            </p>
+
+                            <a
+                                href="leader-details.html"
+                                class="card-link"
+                            >
+                                Read More →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- NARAYANA MURTHY -->
+                    <article
+                        class="leader-card search-result-card"
+                        data-category="business"
+                        data-name="N. R. Narayana Murthy"
+                    >
+
+                        <div class="leader-card-image leader-placeholder">
+                            <span>NM</span>
+                        </div>
+
+                        <div class="leader-card-content">
+
+                            <span class="leader-category">
+                                Business Leader
+                            </span>
+
+                            <h3>
+                                N. R. Narayana Murthy
+                            </h3>
+
+                            <p>
+                                Entrepreneur and technology leader
+                                associated with India's IT industry.
+                            </p>
+
+                            <a
+                                href="leader-details.html"
+                                class="card-link"
+                            >
+                                Read More →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SATYA NADELLA -->
+                    <article
+                        class="leader-card search-result-card"
+                        data-category="technology"
+                        data-name="Satya Nadella"
+                    >
+
+                        <div class="leader-card-image leader-placeholder">
+                            <span>SN</span>
+                        </div>
+
+                        <div class="leader-card-content">
+
+                            <span class="leader-category">
+                                Technology
+                            </span>
+
+                            <h3>
+                                Satya Nadella
+                            </h3>
+
+                            <p>
+                                Technology leader known for his leadership
+                                in the global technology industry.
+                            </p>
+
+                            <a
+                                href="leader-details.html"
+                                class="card-link"
+                            >
+                                Read More →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- KALPANA CHAWLA -->
+                    <article
+                        class="leader-card search-result-card"
+                        data-category="scientists"
+                        data-name="Kalpana Chawla"
+                    >
+
+                        <div class="leader-card-image leader-placeholder">
+                            <span>KC</span>
+                        </div>
+
+                        <div class="leader-card-content">
+
+                            <span class="leader-category">
+                                Scientist
+                            </span>
+
+                            <h3>
+                                Kalpana Chawla
+                            </h3>
+
+                            <p>
+                                Astronaut and aerospace engineer who
+                                inspired students around the world.
+                            </p>
+
+                            <a
+                                href="leader-details.html"
+                                class="card-link"
+                            >
+                                Read More →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SARDAR PATEL -->
+                    <article
+                        class="leader-card search-result-card"
+                        data-category="indian-leaders"
+                        data-name="Sardar Vallabhbhai Patel"
+                    >
+
+                        <div class="leader-card-image leader-placeholder">
+                            <span>VP</span>
+                        </div>
+
+                        <div class="leader-card-content">
+
+                            <span class="leader-category">
+                                Indian Leader
+                            </span>
+
+                            <h3>
+                                Sardar Vallabhbhai Patel
+                            </h3>
+
+                            <p>
+                                Indian statesman remembered for his role
+                                in national unity and leadership.
+                            </p>
+
+                            <a
+                                href="leader-details.html"
+                                class="card-link"
+                            >
+                                Read More →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ================= NO RESULTS ================= -->
+                <div
+                    id="searchNoResults"
+                    class="empty-state"
+                    style="display: none;"
+                >
+
+                    <div class="empty-icon">
+                        🔍
+                    </div>
+
+                    <h3>
+                        No Leaders Found
+                    </h3>
+
+                    <p>
+                        We couldn't find any leader matching your search.
+                        Try another name, profession or category.
+                    </p>
+
+                    <button
+                        type="button"
+                        id="clearSearch"
+                        class="secondary-btn"
+                    >
+                        Clear Search
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-box">
+
+                    <span class="section-label">
+                        Explore More
+                    </span>
+
+                    <h2>
+                        Can't Find What You're Looking For?
+                    </h2>
+
+                    <p>
+                        Browse our complete collection of leaders and
+                        discover inspiring personalities from different
+                        fields.
+                    </p>
+
+                    <div class="cta-actions">
+
+                        <a
+                            href="leaders.html"
+                            class="primary-btn"
+                        >
+                            View All Leaders
+                        </a>
+
+                        <a
+                            href="categories.html"
+                            class="secondary-btn"
+                        >
+                            Browse Categories
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-about">
+
+                <a href="index.html" class="logo">
+                    Great<span>Minds</span>
+                </a>
+
+                <p>
+                    An educational platform celebrating the lives,
+                    achievements and contributions of great leaders
+                    and inspiring personalities.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+
+                <a href="leaders.html">Leaders</a>
+
+                <a href="categories.html">Categories</a>
+
+                <a href="timeline.html">Timeline</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Explore</h3>
+
+                <a href="world-leaders.html">
+                    World Leaders
+                </a>
+
+                <a href="favorites.html">
+                    Favorites
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Account</h3>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 Great Minds. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

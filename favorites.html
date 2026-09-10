@@ -1,0 +1,467 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="View your favorite great leaders and inspiring personalities on Great Minds.">
+
+    <title>Favorites | Great Minds</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                Great<span>Minds</span>
+            </a>
+
+            <!-- Navigation -->
+            <nav class="nav-menu">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="leaders.html">
+                    Leaders
+                </a>
+
+                <a href="categories.html">
+                    Categories
+                </a>
+
+                <a href="timeline.html">
+                    Timeline
+                </a>
+
+                <a href="world-leaders.html">
+                    World Leaders
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+            <!-- Account -->
+            <div class="nav-actions">
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <a href="register.html" class="register-btn">
+                    Register
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- ================= PAGE HERO ================= -->
+
+        <section class="page-hero">
+
+            <div class="container">
+
+                <p class="hero-small-title">
+                    YOUR COLLECTION
+                </p>
+
+                <h1>
+                    Your
+                    <span>Favorite Leaders</span>
+                </h1>
+
+                <p>
+                    Save the personalities you find inspiring
+                    and easily explore them again whenever you want.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FAVORITES SECTION ================= -->
+
+        <section class="favorites-section">
+
+            <div class="container">
+
+
+                <!-- Section Heading -->
+
+                <div class="section-heading">
+
+                    <p class="section-subtitle">
+                        SAVED LEADERS
+                    </p>
+
+                    <h2>
+                        My Favorites
+                    </h2>
+
+                    <p>
+                        Your favorite leaders will appear here.
+                    </p>
+
+                </div>
+
+
+                <!-- ================= FAVORITES CONTENT ================= -->
+
+                <div
+                    id="favoritesContainer"
+                    class="leaders-grid"
+                >
+
+
+                    <!--
+                        JavaScript will dynamically insert
+                        favorite leader cards here.
+                    -->
+
+                </div>
+
+
+                <!-- ================= EMPTY STATE ================= -->
+
+                <div
+                    id="emptyFavorites"
+                    class="empty-state"
+                >
+
+                    <div class="empty-icon">
+                        ❤️
+                    </div>
+
+                    <h2>
+                        No Favorites Yet
+                    </h2>
+
+                    <p>
+                        You haven't added any leaders to your
+                        favorites yet.
+                    </p>
+
+                    <p>
+                        Explore the leaders and save the people
+                        who inspire you.
+                    </p>
+
+                    <a
+                        href="leaders.html"
+                        class="primary-btn"
+                    >
+                        Explore Leaders
+                    </a>
+
+                </div>
+
+
+                <!-- ================= CLEAR FAVORITES ================= -->
+
+                <div
+                    id="clearFavoritesContainer"
+                    class="favorites-actions"
+                >
+
+                    <button
+                        type="button"
+                        id="clearFavoritesBtn"
+                        class="secondary-btn"
+                    >
+                        Clear All Favorites
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section class="why-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-subtitle">
+                        HOW IT WORKS
+                    </p>
+
+                    <h2>
+                        Build Your Collection
+                    </h2>
+
+                    <p>
+                        Save the leaders you want to learn more about.
+                    </p>
+
+                </div>
+
+
+                <div class="features-grid">
+
+
+                    <!-- Step 1 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            🔎
+                        </div>
+
+                        <h3>
+                            1. Explore
+                        </h3>
+
+                        <p>
+                            Browse through different leaders and
+                            discover their stories.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Step 2 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            ❤️
+                        </div>
+
+                        <h3>
+                            2. Save
+                        </h3>
+
+                        <p>
+                            Add inspiring leaders to your favorites
+                            list.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Step 3 -->
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            📖
+                        </div>
+
+                        <h3>
+                            3. Learn
+                        </h3>
+
+                        <p>
+                            Return to your favorites and learn more
+                            about their lives and achievements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-content">
+
+                    <h2>
+                        Discover More Great Minds
+                    </h2>
+
+                    <p>
+                        Explore more inspiring personalities
+                        and add your favorites.
+                    </p>
+
+                    <a
+                        href="leaders.html"
+                        class="primary-btn"
+                    >
+                        Explore Leaders
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+
+            <!-- Footer About -->
+
+            <div class="footer-about">
+
+                <a href="index.html" class="logo">
+                    Great<span>Minds</span>
+                </a>
+
+                <p>
+                    An educational platform dedicated to sharing
+                    the stories, achievements and contributions
+                    of great personalities.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-links">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="leaders.html">
+                    Leaders
+                </a>
+
+                <a href="categories.html">
+                    Categories
+                </a>
+
+                <a href="timeline.html">
+                    Timeline
+                </a>
+
+            </div>
+
+
+            <!-- Information -->
+
+            <div class="footer-links">
+
+                <h3>
+                    Information
+                </h3>
+
+                <a href="world-leaders.html">
+                    World Leaders
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="favorites.html">
+                    Favorites
+                </a>
+
+            </div>
+
+
+            <!-- Account -->
+
+            <div class="footer-links">
+
+                <h3>
+                    Account
+                </h3>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Great Minds. All Rights Reserved.
+            </p>
+
+            <p>
+                Learn from the past. Inspire the future.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Main JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+```
